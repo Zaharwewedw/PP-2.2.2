@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class CarDaoImp implements CarDao {
 
     public Set<Car> getListCar(Integer i) {
-        if (i == null || i > 5)  i = 5;
+        if (i > 5)  i = 5;
         Car.setIdCar(i);
         Set<Car> carList = new HashSet<>();
         Collections.addAll(carList, new Car("BMW", 134, "E60"),
